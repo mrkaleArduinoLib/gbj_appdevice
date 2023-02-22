@@ -94,6 +94,10 @@ public:
     initEvents();
   }
 
+protected:
+  std::vector<gbj_appdata::Parameter *> ptrStatics_, ptrParams_, ptrTelemetry_,
+    ptrEvents_;
+
   // Statics (attributes) - constants published at boot
   inline void publishAttribsStatic()
   {
@@ -126,10 +130,6 @@ public:
       processMeasure(prm);
     }
   }
-
-protected:
-  std::vector<gbj_appdata::Parameter *> ptrStatics_, ptrParams_, ptrTelemetry_,
-    ptrEvents_;
 
   // Abstract methods
   virtual void initStatics() = 0;
