@@ -1,6 +1,6 @@
 {
   "name": "gbj_appdevice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library processes and publishes categorized data items to IoT platform.",
   "keywords": "application",
   "repository": {

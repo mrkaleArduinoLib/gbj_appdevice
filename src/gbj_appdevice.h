@@ -37,8 +37,6 @@
 class gbj_appdevice : public gbj_appthingsboard
 {
 public:
-  const char *VERSION = "GBJ_APPDEVICE 1.0.0";
-
   /*
     Constructor.
 

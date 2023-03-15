@@ -27,14 +27,6 @@ This is an application library, which is used for derivating project specific li
 * **Arduino.h**: Main include file for the Arduino platform.
 
 
-<a id="constants"></a>
-
-## Constants
-* **VERSION**: Name and semantic version of the library.
-
-Other constants, enumerations, result codes, and error codes are inherited from the parent library.
-
-
 <a id="interface"></a>
 
 ## Interface
