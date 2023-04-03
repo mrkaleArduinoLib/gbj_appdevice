@@ -139,21 +139,21 @@ private:
   gbj_appdata *datahub_;
   inline void processAttrib(gbj_appdata::Parameter *prm)
   {
-    if (prm->isReady())
+    if (prm->isPub())
     {
       publishAttrib(datahub_->getPrmName(prm->getName()),
                     prm->publish().c_str());
-      isError() ? prm->init() : prm->reset();
+      isError() ? prm->pubInit() : prm->pubReset();
     }
   }
 
   inline void processMeasure(gbj_appdata::Parameter *prm)
   {
-    if (prm->isReady())
+    if (prm->isPub())
     {
       publishMeasure(datahub_->getPrmName(prm->getName()),
                      prm->publish().c_str());
-      isError() ? prm->init() : prm->reset();
+      isError() ? prm->pubInit() : prm->pubReset();
     }
   }
 };
