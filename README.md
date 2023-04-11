@@ -12,10 +12,11 @@ This is an application library, which is used for derivating project specific li
 
 
 ## Fundamental functionality
-* The library is aimed to process and prepared project data items aimed and categorized for publishing in <abbr title='Internet Of Things'>IoT</abbr> platform in uniform way* The library utilizes internal timer for periodical data publishing to <abbr title="Internet of Things">IoT</abbr> platform.
+* The library is aimed to process and prepared project data items aimed and categorized for publishing in <abbr title='Internet Of Things'>IoT</abbr> platform in uniform way* The library utilizes internal timer for periodical data publishing to IoT platform.
 * The library, meaning the class defined in it, implements virtual methods from its parent library and hides them from corresponding project specific library.
 * On the other hand, the library declares another virtual methods for categorizing published data items, which derived project specific libary has to implement.
 * The class from the library is not intended to be used directly in a sketch, just as a parent class for project specific device libraries defining and categozing published data items, e.g., `apptb_device`.
+* The methods, custom types, and other features not descibed in this document are valid and descibed in the documentation for the parent class.
 
 
 <a id="dependency"></a>
